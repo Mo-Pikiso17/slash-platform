@@ -1,0 +1,33 @@
+.form{
+    margin: auto;
+    width: 80%;
+}
+.form h2{
+    text-align: center;
+}
+form{
+    width: 70%;
+    margin: auto;
+    height: auto;
+}
+.form form label{
+    font-weight: 300px;
+    font-family: sans-serif;
+}
+.form form #name, #trackT{
+    width: 50%;
+}
+/*-----preview-----*/
+.preview{
+    width: 70%;
+    margin: auto;
+    height: auto;
+    display: none;
+}
+.preview h3{
+    text-align: center;
+}
+.preview .layout img{
+    width: 60%;
+    height: auto;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/upload.css">
+    <script src="https://sheetdb.io/handlebars.js"></script>
+    <script src="//sheetdb.io/api/js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slash Beats || Upload</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+     <!-------menu----->
+    <div class="phone">
+        <a href="" class="a">Slash Beats</a>
+    </div>
+    <div class="laptop">
+        <div class="one">
+            <a href="" class="a">Slash Beats</a>
+        </div>
+        <div class="box">
+            <a href="../index.html" class="amenu">Home</a>
+            <a href="https://mthobisi-za.github.io/Mtho-landing-page/" class="amenu">About Me</a>
+            <a href="#" class="amenu">Upload</a>
+            <a href="./download.html" class="amenu">Download</a>
+        </div>
+    </div>
+    <!-------body----->
+    <div class="form">
+        <h2>Slash Beats form</h2>
+        <form>
+            <label for="name">Artist Name:</label>
+            <input type="text" id="name"> <br> <br>
+
+            <label for="trackT">Track Tittle:</label>
+            <input type="text" id="trackT"> <br> <br>
+
+            <label for="flieT">Upload Track :</label>
+            <input type="file" id="fileT" accept="audio/*"> <br><br>
+
+            <label for="flieI">Upload Artwork :</label>
+            <input type="file" id="fileI" accept="image/*"> <br><br>
+
+            <label for="date">Date Of release :</label>
+            <input type="date" id="date"> <br><br>
+            <span style="font-family: monospace;" id="err"></span>
+            <br><br>
+
+            <button onclick="getData()">Check</button>
+            
+        </form>
+        <div class="preview">
+            <h3>Preview Your Uploads</h3> <br>
+            <div class="layout">
+                <img alt="">
+                <audio controls ></audio> <br> <br>
+
+                <span style="font-family: monospace;">If everything is fine! Click on submit button.</span> <br> <br>
+                <button onclick="setData()">Submit</button>
+
+            </div>
+            
+        </div>
+        
+    </div>
+    <script src="../js/file-factory-function.js"></script>
+   
+</body>
+</html>

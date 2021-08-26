@@ -1,0 +1,48 @@
+body{
+    width: 100%;
+    margin: 0;
+    height: auto;
+}
+.phone{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.laptop{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: gray;
+}
+.laptop a{
+    text-decoration: none;
+    font-size: 50px;
+}
+.one{
+    width: 50%;
+}
+.box{
+    text-align: right;
+    width: 50%;
+    margin-right: 5%;
+    display: flex;
+    gap: 10%;
+}
+.box a{
+    text-align: right;
+    text-decoration: none;
+    font-size: medium;
+}
+.amenu{
+    text-align: right;
+    margin-top: 3%;
+    color: black;
+}
+@media (max-width:500px) {
+    .laptop{
+        display: none;
+    }
+    .phone{
+        display: block;
+    }
+}
