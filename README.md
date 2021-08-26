@@ -1,6 +1,6 @@
- <h2 align='center'> Plash Platform </h2>
+# <h1 align='center'> Plash Platform </h1>
 
-# Welcome to The Free Music Platform
+ Welcome to The Free Music Platform
 
 
 
