@@ -2,39 +2,61 @@
     <!-------body----->
     <div class="form">
         <h2>Slash Beats form</h2>
-        <form>
+        <form action="/setData" method="POST">
             <label for="name">Artist Name:</label>
-            <input type="text" id="name"> <br> <br>
+            <input type="text" id="name" name="artistName"> <br> <br>
 
             <label for="trackT">Track Tittle:</label>
-            <input type="text" id="trackT"> <br> <br>
+            <input type="text" id="trackT" name="trackName"> <br> <br>
 
             <label for="flieT">Upload Track :</label>
-            <input type="file" id="fileT" accept="audio/*"> <br><br>
+            <input type="file" onchange="fileChange()" id="fileT" name="mp3" accept="audio/*"> <br><br>
 
             <label for="flieI">Upload Artwork :</label>
-            <input type="file" id="fileI" accept="image/*"> <br><br>
+            <input type="file" id="fileI" onchange="imageChange()" name="image" accept="image/*"> <br><br>
 
             <label for="date">Date Of release :</label>
-            <input type="date" id="date"> <br><br>
+            <input type="date" id="date" name="date"> <br><br>
             <span style="font-family: monospace;" id="err"></span>
             <br><br>
-
-            <button onclick="getData()">Check</button>
+                <span style="font-family: monospace;">Preview your upload and press Submit once done!</span> <br> <br>
+            <button type="submit">Submit</button>
             
         </form>
         <div class="preview">
+            
             <h3>Preview Your Uploads</h3> <br>
             <div class="layout">
                 <img alt="">
-                <audio controls ></audio> <br> <br>
-
-                <span style="font-family: monospace;">If everything is fine! Click on submit button.</span> <br> <br>
-                <button onclick="setData()">Submit</button>
-
+                <audio ></audio> <br> <br>
             </div>
-            
         </div>
-        
     </div>
-   
+   <script>
+       var img = document.querySelector("img");
+    var audio = document.querySelector("audio");
+       function fileChange(){
+           var filInputMp3 = document.querySelector("#fileT");
+            var actulF = filInputMp3.files[0];
+            var reader = new FileReader();
+            reader.onload = function () {
+            var mp3 = reader.result;
+            audio.controls = true;
+            audio.setAttribute("src", mp3);
+            };
+            reader.readAsDataURL(actulF);
+       }
+       function imageChange(){
+            ///---file---image
+            var filInputImage = document.querySelector("#fileI");
+            var actulFImage = filInputImage.files[0];
+            var readerImage = new FileReader();
+            readerImage.onload = function () {
+            var image = readerImage.result;
+            img.src = image;
+            };
+            readerImage.readAsDataURL(actulFImage);
+            ////setting the data
+       }
+       
+   </script>
