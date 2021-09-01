@@ -13,8 +13,17 @@ app.set("view engine", "handlebars");
 
 
 app.get("/", async function(req, res){
+    var tittle = "Home"
     res.render('index')
 });
+
+app.get('/upload', async function(req,res){
+    res.render("upload")
+})
+
+app.get("/stream", async function(req,res){
+    res.render("stream")
+})
 
 app.listen(PORT, ()=>{
     console.log("server started :" + PORT)
