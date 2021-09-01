@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/upload.css">
-    <script src="https://sheetdb.io/handlebars.js"></script>
-    <script src="//sheetdb.io/api/js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore .js";></script>
     <meta charset="UTF-8">
+   
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slash Beats || Upload</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
      <!-------menu----->
@@ -65,7 +73,27 @@
         </div>
         
     </div>
-    <script src="../js/file-factory-function.js"></script>
    
+    <script >
+        const firebaseConfig = {
+          apiKey: "AIzaSyC0IlfiyX6cENggKqFDKk8LGe9DKL56iBc",
+          authDomain: "slash-music-platform.firebaseapp.com",
+          projectId: "slash-music-platform",
+          storageBucket: "slash-music-platform.appspot.com",
+          messagingSenderId: "156018090929",
+          appId: "1:156018090929:web:46c245f622c17949689390",
+          measurementId: "G-VG46R3L3DP"
+        };
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const db = firebase.firestore();
+        db.settings({
+            timestampsInSnapshots: true
+        });
+        // Initialize Firebase
+
+        //-------------------------------
+      </script>
+    <script src="../js/file-factory-function.js"></script>
 </body>
 </html>
