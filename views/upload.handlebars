@@ -1,0 +1,40 @@
+
+    <!-------body----->
+    <div class="form">
+        <h2>Slash Beats form</h2>
+        <form>
+            <label for="name">Artist Name:</label>
+            <input type="text" id="name"> <br> <br>
+
+            <label for="trackT">Track Tittle:</label>
+            <input type="text" id="trackT"> <br> <br>
+
+            <label for="flieT">Upload Track :</label>
+            <input type="file" id="fileT" accept="audio/*"> <br><br>
+
+            <label for="flieI">Upload Artwork :</label>
+            <input type="file" id="fileI" accept="image/*"> <br><br>
+
+            <label for="date">Date Of release :</label>
+            <input type="date" id="date"> <br><br>
+            <span style="font-family: monospace;" id="err"></span>
+            <br><br>
+
+            <button onclick="getData()">Check</button>
+            
+        </form>
+        <div class="preview">
+            <h3>Preview Your Uploads</h3> <br>
+            <div class="layout">
+                <img alt="">
+                <audio controls ></audio> <br> <br>
+
+                <span style="font-family: monospace;">If everything is fine! Click on submit button.</span> <br> <br>
+                <button onclick="setData()">Submit</button>
+
+            </div>
+            
+        </div>
+        
+    </div>
+   
