@@ -1,10 +1,14 @@
-body{
-    /* background-color:white; */
-    margin:0px;
-    padding:0px;
+*{
+    font-family: sans-serif;
 }
 
+body{
+    background-color:white;
+    margin:0;
+    padding:0;
+}
 
+/* Home page */
 nav{
     justify-content: space-between;
     align-items: center;
@@ -115,9 +119,126 @@ footer ul li a{
 }
 
 
+/* Team page */
+
+.team-section{
+    overflow: hidden;
+    text-align: center;
+    background: #08080898;
+    height: 100%;
+    /* height: 570px; */
+    max-width: 900px;
+    border-radius: 5px;
+    padding: 60px;
+    margin: auto;
+
+}
 
 
-  
+.team-section h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 40px;
+}
+
+.border{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: turquoise;
+    margin-bottom: 40px;
+
+}
+
+.border-two{
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 3px;
+    background: white;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+
+}
+
+.section a img{
+    display: inline;
+    margin: 0 30px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20%;
+    margin-top: 20px;
+
+} 
+
+ .section{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    }
+
+/* .section:target{
+    height: auto;
+} */
+
+.name{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+button {
+    font-size: 16px;
+    border-radius: 15px;
+    width: 110px;
+    height: 40px;
+
+}
+
+button:hover{
+    background-color: rgb(72, 170, 170);
+}
+
+/* About page */
+
+.about-section{
+    overflow: hidden;
+    text-align: center;
+    background: #08080898;
+    height: 81vh;
+    /* height: 570px; */
+    /* max-width: 900px; */
+    border-radius: 5px;
+    padding: 60px;
+    margin: auto;
+
+}
+
+
+.about-section h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 40px;
+}
+
+.about-section{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    }
+
+
+
+
 
 
 
