@@ -1,0 +1,244 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-color:white;
+    margin:0;
+    padding:0;
+}
+
+/* Home page */
+nav{
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color:white;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 0px 5%;
+} 
+
+nav ul li a{
+margin: 30px;
+}
+
+
+
+
+@keyframes kf-color-mix {
+    0% { color:orchid }
+    100% { color:rgb(110, 171, 179) }
+  }
+  
+
+  .rrow{
+      height: 100vh;
+      width: 100%;
+  }
+  .rrow {
+    /* justify-content: space-between; */
+    padding: 310px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: kf-color-mix 1s linear infinite alternate;
+    background: currentColor;
+  }
+
+  ul{
+    list-style:none;
+
+}
+
+a{
+    text-decoration:none;
+}
+
+
+  .footer{
+    height: 350px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.social-icons i{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:teal;
+    margin: 20px 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons{
+    display: flex;
+    margin-left: 540px;
+}
+
+.social-icons i{
+    color: black;
+    font-size: 20px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul li a .sep{
+    margin: 0 28px;
+    opacity: 0.3;
+}
+
+footer ul li a .contact{
+    /* margin-left:80px; */
+    font-family: myrida pro regular;
+}
+
+footer ul li .contact{
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    /* margin-left:100px; */
+}
+
+footer ul li a:hover{
+    color: cadetblue;
+}
+
+footer ul li a{
+    color: rgb(6, 117, 121);
+}
+
+
+/* Team page */
+
+.team-section{
+    overflow: hidden;
+    text-align: center;
+    background: #08080898;
+    height: 100%;
+    /* height: 570px; */
+    max-width: 900px;
+    border-radius: 5px;
+    padding: 60px;
+    margin: auto;
+
+}
+
+
+.team-section h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 40px;
+}
+
+.border{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background: turquoise;
+    margin-bottom: 40px;
+
+}
+
+.border-two{
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 3px;
+    background: white;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+
+}
+
+.section a img{
+    display: inline;
+    margin: 0 30px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20%;
+    margin-top: 20px;
+
+} 
+
+ .section{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    }
+
+/* .section:target{
+    height: auto;
+} */
+
+.name{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+button {
+    font-size: 16px;
+    border-radius: 15px;
+    width: 110px;
+    height: 40px;
+
+}
+
+button:hover{
+    background-color: rgb(72, 170, 170);
+}
+
+/* About page */
+
+.about-section{
+    overflow: hidden;
+    text-align: center;
+    background: #08080898;
+    height: 81vh;
+    /* height: 570px; */
+    /* max-width: 900px; */
+    border-radius: 5px;
+    padding: 60px;
+    margin: auto;
+
+}
+
+
+.about-section h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 40px;
+}
+
+.about-section{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    }
+
+
+
+
+
+
+
