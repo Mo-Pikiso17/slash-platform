@@ -23,27 +23,31 @@ nav ul li a{
 margin: 30px;
 }
 
-
-
-
-@keyframes kf-color-mix {
+/* @keyframes kf-color-mix {
     0% { color:orchid }
     100% { color:rgb(110, 171, 179) }
-  }
+  } */
   
 
-  .rrow{
-      height: 100vh;
-      width: 100%;
-  }
-  .rrow {
+.rrow{
+    height: 100vh;
+    width: 100%;
+}
+.rrow {
     /* justify-content: space-between; */
     padding: 310px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    animation: kf-color-mix 1s linear infinite alternate;
-    background: currentColor;
+    background: url("/public-dev/pexels-pixabay-414781.png") no-repeat center center;
+	background-size: cover;
+	/* position: absolute; */
+    /* animation: kf-color-mix 1s linear infinite alternate;
+    background: currentColor; */
+  }
+
+  a .btn{
+    color: white;
   }
 
   ul{
@@ -56,7 +60,7 @@ a{
 }
 
 
-  .footer{
+.footer{
     height: 350px;
     display: block;
     flex-direction: column;
