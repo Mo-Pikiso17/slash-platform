@@ -22,7 +22,7 @@ form{
     width: 70%;
     margin: auto;
     height: auto;
-    display: none;
+    display: block;
 }
 .preview h3{
     text-align: center;
