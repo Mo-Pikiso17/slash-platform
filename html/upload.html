@@ -1,77 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+      <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Upload</title>
-    <link rel="stylesheet" href="/css/upload.css">
-</head>
+    <link rel="stylesheet" href="/css/upload.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+  </head>
 
-<body>
-
-    <!-------body----->
-    <div class="form">
-        <h2>Slash Beats form</h2>
-        <form action="/setData" method="POST">
-            <label for="name">Artist Name:</label>
-            <input type="text" id="name" name="artistName"> <br> <br>
-
-            <label for="trackT">Track Tittle:</label>
-            <input type="text" id="trackT" name="trackName"> <br> <br>
-
-            <label for="flieT">Upload Track :</label>
-            <input type="file" onchange="fileChange()" id="fileT" name="mp3" accept="audio/*"> <br><br>
-
-            <label for="flieI">Upload Artwork :</label>
-            <input type="file" id="fileI" onchange="imageChange()" name="image" accept="image/*"> <br><br>
-
-            <label for="date">Date Of release :</label>
-            <input type="date" id="date" name="date"> <br><br>
-            <span style="font-family: monospace;" id="err"></span>
-            <br><br>
-            <span style="font-family: monospace;">Preview your upload and press Submit once done!</span> <br> <br>
-            <button type="submit">Submit</button>
-
-        </form>
-        <div class="preview">
-
-            <h3>Preview Your Uploads</h3> <br>
-            <div class="layout">
-                <img alt="">
-                <audio></audio> <br> <br>
-            </div>
+  <body>     
+    <div class="container content">
+      <br />
+      <br />
+        <h1
+          class="is-large is-info is-teal"
+          style="text-align: center; font-weight: bolder"
+        >
+          Upload Form
+        </h1>
+        <div class="form block">
+          <div class="control">
+            <input id="name"
+              class="input is-hovered"
+              type="text"
+              placeholder="UserName"
+            />
+          </div>
+        </div>
+        <div class="form block">
+          <div class="control">
+            <input id="tittle"
+              class="input is-hovered"
+              type="text"
+              placeholder="Image tittle"
+            />
+          </div>
+        </div>
+        <div class="form block">
+          <div class="control">
+            <input class="input is-hovered" id="tags" type="text" placeholder="Tags" />
+          </div>
+          <span class="tag"
+            >Separate tags with a comma. E.g : Nature, Wild, Trees</span
+          >
+        </div>
+        <div class="form block">
+          <div class="control">
+            <input class="input is-hovered" id="image" type="file" placeholder="Image" />
+          </div>
+          <span class="tag">Upload image</span>
+        </div>
+        <div class="form block">
+          <div class="buttons">
+            <button style="display: none;" id="btn" class="button is-success">Submit</button>
+          </div>
         </div>
     </div>
     <script>
-        var img = document.querySelector("img");
-        var audio = document.querySelector("audio");
-        function fileChange() {
-            var filInputMp3 = document.querySelector("#fileT");
-            var actulF = filInputMp3.files[0];
-            var reader = new FileReader();
-            reader.onload = function () {
-                var mp3 = reader.result;
-                audio.controls = true;
-                audio.setAttribute("src", mp3);
-            };
-            reader.readAsDataURL(actulF);
-        }
-        function imageChange() {
-            ///---file---image
-            var filInputImage = document.querySelector("#fileI");
-            var actulFImage = filInputImage.files[0];
-            var readerImage = new FileReader();
-            readerImage.onload = function () {
-                var image = readerImage.result;
-                img.src = image;
-            };
-            readerImage.readAsDataURL(actulFImage);
-            ////setting the data
-        }
-
-    </script>
-</body>
-
+        const firebaseConfig = {
+          apiKey: "AIzaSyBDeoXkHSkIRazcqa5OOBbx26phaZdrlrE",
+          authDomain: "slash-potho-gallery.firebaseapp.com",
+          projectId: "slash-potho-gallery",
+          storageBucket: "slash-potho-gallery.appspot.com",
+          messagingSenderId: "823717363319",
+          appId: "1:823717363319:web:7e6a6fa68b5ad1f02f5072",
+          measurementId: "G-TNR6MVZX1F"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        db.settings({timestampsinSnapshots: true});
+      </script>
+      <script src="../database-functions/upload-data.js"></script>
+      <script src="../database-functions/getdata.js"></script>
+    </body>
 </html>
