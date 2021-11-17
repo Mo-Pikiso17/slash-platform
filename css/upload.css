@@ -1,21 +1,60 @@
-.form{
-    margin: auto;
-    width: 80%;
+body{
+    background: url("/public-dev/pexels-pixabay-414781.png") no-repeat center center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* padding: 310px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.form{
+    position: relative;
+    width: 440px;
+    height:410px;
+    background: rgba(0, 0, 0, 0.527);
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: auto; 
+    /* width: 80%; */
+}
+
+.form:before{
+    content: " ";
+    background:transparent;
+    position: absolute;
+    width: 100%;
+    height:100%;
+}
+
 .form h2{
     text-align: center;
+    color:white;
+
 }
 form{
-    width: 70%;
+    width: 80%;
     margin: auto;
     height: auto;
 }
 .form form label{
-    font-weight: 300px;
+    font-weight: 400px;
     font-family: sans-serif;
+    color: white;
 }
 .form form #name, #trackT{
     width: 50%;
+}
+
+button {
+    font-size: 16px;
+    border-radius: 15px;
+    width: 110px;
+    height: 40px;
+
 }
 /*-----preview-----*/
 .preview{
@@ -26,6 +65,8 @@ form{
 }
 .preview h3{
     text-align: center;
+    color: wheat;
+
 }
 .preview .layout img{
     width: 60%;

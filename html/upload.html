@@ -7,12 +7,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Upload</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="/css/upload.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
   </head>
+=======
+    <link rel="stylesheet" href="/css/upload.css">
+</head>
+
+<body>
+
+    <!-------body----->
+    <div class="form">
+        <h2>Slash Upload form</h2>
+        <form action="/setData" method="POST">
+            <label for="name">Artist Name:</label>
+            <input type="text" id="name" name="artistName"> <br> <br>
+
+            <label for="trackT">Track Tittle:</label>
+            <input type="text" id="trackT" name="trackName"> <br> <br>
+
+            <label for="flieT">Upload Track :</label>
+            <input type="file" onchange="fileChange()" id="fileT" name="mp3" accept="audio/*"> <br><br>
+
+            <label for="flieI">Upload Artwork :</label>
+            <input type="file" id="fileI" onchange="imageChange()" name="image" accept="image/*"> <br><br>
+
+            <label for="date">Date Of release :</label>
+            <input type="date" id="date" name="date"> <br><br>
+            <span style="font-family: monospace;" id="err"></span>
+            <br><br>
+            <span style="font-family: monospace; color: white;font-size: 16px;color: wheat;">Preview your upload and press Submit once done!</span> <br> <br>
+            <button type="submit">Submit</button>
+>>>>>>> c825aef11cbeeca2781c8626f00d58f3a39678c2
 
   <body>     
     <div class="container content">
