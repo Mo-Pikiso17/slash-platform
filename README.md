@@ -2,14 +2,15 @@
 
   # <h5> About Us </h5>
 <p align="center"> 
-  Welcome to our music platform.
+  Welcome to our Image sharing and downloading site.
  
- I am a front-end Developer and I always had a goal to create my own streaming platform. I am looking to collaborate with other dvelopers and work in order to bring quality result.
+ This is a joint project between Mthobisi Ngubane and Moddy Pikiso.
  
- How it suppose to work.
+ How it suppose to work:
  
- This project must be able to get music from artist's and upload them to our platform. 
- We don't collect any information about artist's or listener's but we simply collect song information
+  Anyone can upload their images via our upload button in the homepage
+  and image lovers can download an image from the platform. 
+  We don't collect any information about uploader or downloader but we simply collect image information
  </p>
 
 
